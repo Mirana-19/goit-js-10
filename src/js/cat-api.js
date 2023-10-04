@@ -22,7 +22,7 @@ export function fetchBreeds() {
 }
 
 export function fetchCatByBreed(breedId) {
-  PARAMS = new URLSearchParams({
+  const PARAMS = new URLSearchParams({
     breed_ids: breedId,
   });
 
