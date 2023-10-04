@@ -1,6 +1,6 @@
-const BASE_URL = 'https://api.thecatapi.com';
-const BREEDS_ENDPOINT = '/v1/breeds';
-const CAT_ENDPOINT = '/v1/images/search';
+const BASE_URL = 'https://api.thecatapi.com/v1';
+const BREEDS_ENDPOINT = '/breeds';
+const CAT_ENDPOINT = '/images/search';
 
 const OPTIONS = {
   method: 'GET',

@@ -24,10 +24,12 @@ function onPageLoad() {
       });
 
       addVisuallyHidden(refs.loader);
+      removeVisuallyHidden(refs.selectInput);
     })
     .catch(err => {
       console.log(err);
       removeVisuallyHidden(refs.error);
+      addVisuallyHidden(refs.loader);
     });
 }
 
