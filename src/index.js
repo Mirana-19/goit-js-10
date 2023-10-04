@@ -23,12 +23,13 @@ function onPageLoad() {
         select: '.breed-select',
       });
 
-      addVisuallyHidden(refs.loader);
       removeVisuallyHidden(refs.selectInput);
     })
     .catch(err => {
       console.log(err);
       removeVisuallyHidden(refs.error);
+    })
+    .finally(() => {
       addVisuallyHidden(refs.loader);
     });
 }
@@ -45,11 +46,12 @@ function onOptionChange(e) {
       renderCatInfo(res);
 
       removeVisuallyHidden(refs.cardContainer);
-      addVisuallyHidden(refs.loader);
     })
     .catch(err => {
       console.log(err);
       removeVisuallyHidden(refs.error);
+    })
+    .finally(() => {
       addVisuallyHidden(refs.loader);
     });
 }
