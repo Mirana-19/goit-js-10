@@ -2,7 +2,7 @@ const BASE_URL = 'https://api.thecatapi.com';
 const BREEDS_ENDPOINT = '/v1/breeds';
 const CAT_ENDPOINT = '/v1/images/search';
 
-OPTIONS = {
+const OPTIONS = {
   method: 'GET',
   headers: {
     'x-api-key':

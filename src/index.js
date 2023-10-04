@@ -43,7 +43,6 @@ function onOptionChange(e) {
       renderCatInfo(res);
 
       removeVisuallyHidden(refs.cardContainer);
-
       addVisuallyHidden(refs.loader);
     })
     .catch(err => {
